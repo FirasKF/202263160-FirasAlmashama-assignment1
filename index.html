@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YOUR NAME | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for YOUR NAME. About, projects, and contact."
+    />
+
+    <!-- Preload CSS for performance -->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicons optional -->
+    <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Go to home">YOUR NAME</a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <span class="theme-toggle__icon" aria-hidden="true">🌓</span>
+            <span class="theme-toggle__text">Theme</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO / HOME -->
+      <section class="section hero" id="home" aria-label="Home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="pill" id="greeting" aria-live="polite">Hello!</p>
+            <h1 class="hero__title">I’m <span class="accent">YOUR NAME</span>.</h1>
+            <p class="hero__subtitle">
+              Tagline/one-liner: e.g., “Building clean, responsive web experiences with
+              HTML, CSS, and JavaScript.”
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="hero__meta" aria-label="Quick facts">
+              <li><strong>Location:</strong> Saudi Arabia</li>
+              <li><strong>Focus:</strong> Web Fundamentals + AI Tools</li>
+              <li><strong>Status:</strong> Student Portfolio</li>
+            </ul>
+          </div>
+
+          <div class="hero__media" aria-label="Profile photo">
+            <img
+              src="assets/images/profile-placeholder.png"
+              width="420"
+              height="420"
+              loading="lazy"
+              alt="Profile photo of YOUR NAME"
+              class="avatar"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" aria-label="About Me">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">
+            Write 2–3 sentences: who you are, what you study, and what you enjoy building.
+            Keep it clear and professional.
+          </p>
+
+          <div class="cards cards--3">
+            <article class="card">
+              <h3 class="card__title">Strengths</h3>
+              <p class="card__text">
+                Example: Clean structure, attention to detail, and strong debugging skills.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Skills</h3>
+              <ul class="list">
+                <li>HTML (semantic, accessible)</li>
+                <li>CSS (Flexbox/Grid, responsive)</li>
+                <li>JavaScript (DOM, events, storage)</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Hobbies</h3>
+              <p class="card__text">
+                Example: Calisthenics, gaming, and building personal projects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects" aria-label="Projects">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__lead">
+              At least two projects with a title, short description, and image.
+            </p>
+          </div>
+
+          <div class="projects">
+            <article class="project">
+              <img
+                src="assets/images/project-1.png"
+                width="720"
+                height="420"
+                loading="lazy"
+                alt="Screenshot placeholder for Project One"
+                class="project__img"
+              />
+              <div class="project__body">
+                <h3 class="project__title">Project One</h3>
+                <p class="project__desc">
+                  Short description: what it does, what problem it solves, and key features.
+                </p>
+                <ul class="project__tags" aria-label="Project tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link" href="#" aria-label="Open Project One demo">Live Demo</a>
+                  <a class="link" href="#" aria-label="Open Project One code on GitHub"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <img
+                src="assets/images/project-2.png"
+                width="720"
+                height="420"
+                loading="lazy"
+                alt="Screenshot placeholder for Project Two"
+                class="project__img"
+              />
+              <div class="project__body">
+                <h3 class="project__title">Project Two</h3>
+                <p class="project__desc">
+                  Short description: focus on what you learned or improved (responsiveness,
+                  DOM interactions, etc.).
+                </p>
+                <ul class="project__tags" aria-label="Project tags">
+                  <li>Responsive UI</li>
+                  <li>Accessibility</li>
+                  <li>Performance</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link" href="#" aria-label="Open Project Two demo">Live Demo</a>
+                  <a class="link" href="#" aria-label="Open Project Two code on GitHub"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact" aria-label="Contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__lead">
+            This form has no backend. It validates input and shows a friendly confirmation.
+          </p>
+
+          <div class="contact">
+            <form class="form" id="contactForm" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <small class="error" id="nameError"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <small class="error" id="emailError"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                ></textarea>
+                <small class="error" id="messageError"></small>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Send Message</button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="contact__aside" aria-label="Contact info">
+              <div class="card">
+                <h3 class="card__title">Quick Contact</h3>
+                <p class="card__text">
+                  Email: <a class="link" href="mailto:you@example.com">you@example.com</a>
+                </p>
+                <p class="card__text">
+                  LinkedIn: <a class="link" href="#" target="_blank" rel="noreferrer">Profile</a>
+                </p>
+                <p class="card__text">
+                  GitHub: <a class="link" href="#" target="_blank" rel="noreferrer">username</a>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer">
+        <p>© <span id="year"></span> YOUR NAME. All rights reserved.</p>
+        <a class="link" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
